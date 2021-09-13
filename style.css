@@ -9,18 +9,26 @@
 
 body, html{
     margin: 0;
-    font: 16px "lato", sans-serif;
+    font: 14px "lato", sans-serif;
     color: rgb(255, 255, 255);
     height: 100%;
 }
 
 #area-cabecalho{
     background-color: rgb(21, 2, 31);
+    width: 100%;
 	background-size:cover;
 	padding: 10px;
 	text-align: center;
+    position: fixed;
+    z-index: 1000;
 
 }
+
+audio{
+    display: none;
+}
+
 
 #area-logo,#area-menu{
     margin: 0;
@@ -91,7 +99,7 @@ a:hover {
     color: palegoldenrod;
     background-color: rgb(43, 8, 59);
     padding: 18px;
-    font-size: 25px;
+    font-size: 1.3vh;
     letter-spacing: 5px;
 }
 
@@ -127,18 +135,19 @@ footer{
     color: palegoldenrod;
     background-color: rgb(64, 0, 94);
     padding: 16px;
-    font-size: 16px;
+    font-size: 1.3vh;
     text-align: center;
     letter-spacing: 5px;
-
     clear: both;
 	text-align: center;
 	padding: 15px;
 
+
+
 }
 
 .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7,.caixa8,.caixa9,.caixa10, .caixa11, .caixa12,.caixa13,.caixa14 {
-    position: relative;
+    position:relative;
     height: 100%;
     width: 100%;
     opacity: 0.75;
@@ -223,9 +232,12 @@ footer{
 
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:300px){
+    audio{
+        display: none;
+    }
 
-    .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7, .caixa8,.caixa9,.caixa10,.caixa11, .caixa12,.caixa13, .caixa14  {
+     .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7, .caixa8,.caixa9,.caixa10,.caixa11, .caixa12,.caixa13, .caixa14  {
         height: 100%;
         width: 100%;
         display:flex;
@@ -235,16 +247,11 @@ footer{
         background-position:center;
         background-attachment: fixed;
     } 
+
+
+
     
-    span{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction:column-reverse;
-
-
-    }
-    footer{
+   footer{
         padding-left: 10%;
         font-size: 60%;
         text-align: center;
@@ -253,6 +260,9 @@ footer{
 }
 
 @media screen and (min-width:1000px) {
+    audio{
+        display: none;
+    }
 
     .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7,.caixa8,.caixa9,.caixa10,.caixa11, .caixa12,.caixa13,.caixa14  {
         height: 100%;
@@ -265,13 +275,7 @@ footer{
         background-attachment: fixed;
     } 
     
-    span{
-        height: 100%;
-        width: 100%;
-        flex-direction:column-reverse;
 
-
-    }
     footer{
         padding-left: 10%;
         font-size: 60%;
