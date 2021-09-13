@@ -25,9 +25,7 @@ body, html{
 
 }
 
-audio{
-    display: none;
-}
+
 
 
 #area-logo,#area-menu{
@@ -129,7 +127,11 @@ span {
     text-transform: uppercase;
 }
 
+audio{
+    width: 100%;
+    height:16px;
 
+}
 
 footer{
     color: palegoldenrod;
@@ -233,9 +235,7 @@ footer{
 
 
 @media screen and (max-width:300px){
-    audio{
-        display: none;
-    }
+
 
      .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7, .caixa8,.caixa9,.caixa10,.caixa11, .caixa12,.caixa13, .caixa14  {
         height: 100%;
@@ -260,9 +260,7 @@ footer{
 }
 
 @media screen and (min-width:1000px) {
-    audio{
-        display: none;
-    }
+
 
     .caixa1, .caixa2,.caixa3,.caixa4,.caixa5,.caixa6,.caixa7,.caixa8,.caixa9,.caixa10,.caixa11, .caixa12,.caixa13,.caixa14  {
         height: 100%;
